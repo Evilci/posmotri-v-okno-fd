@@ -198,6 +198,7 @@ ol {
   background-color:rgba(255, 255, 255, 0);
   color: #fff;
   border-color: #fff;
+  cursor: pointer;
 }
 
 .search-form__submit-button {
@@ -257,7 +258,6 @@ ol {
 
 .button:hover {
   text-decoration-line: underline;
-  cursor: pointer;
   text-decoration-skip-ink: none;
 }
 
@@ -267,7 +267,7 @@ ol {
   text-decoration-skip-ink: none;
 }
 
-.search-form__submit-button:active {
+.button:active {
   background-color: #545050;
   cursor: pointer;
 }
@@ -279,8 +279,11 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   border: 1px solid white;
-  padding: 1px;
   outline: none;
+}
+
+.search-form__label:hover{
+  text-decoration-line: underline;
 }
 
 .button:focus-visible {
